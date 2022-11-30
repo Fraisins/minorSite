@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Команда</title>
+</head>
+<body>
+    <header>
+        <nav class="menu" id="up">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="characters.html">Герои</a></li>
+                <li><a href="statusEffects.html">Негативные статусы</a></li>
+                <li><a href="elements.html">Стихии</a></li>
+                <li><a href="teams.html" class="active">Команды</a></li>
+                <li><a href="https://store.steampowered.com/app/372360/Tales_of_Symphonia/" target="_blank"><img src="../img/Steam_icon_logo.svg.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="../img/TalesOfSymphoniaMainMenu.png" class="fullbg" title="Логотип игры из главного меню" alt="Логотип игры из главного меню">
+        <div class="info">
+            <h1>Кратко</h1>
+            <p>На этой страничке можно оставить данные по вашим прохождениям и воспользоваться рандомайзером команд!</p>
+        </div>
+        <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>
+            <div class="info forms">
+                <h2>Контактные данные</h2>
+                    <p>Имя<br><input type="text" name="firstName" placeholder="Введите имя"></p>
+                    <p>Фамилия<br><input type="text" name="lastName" placeholder="Введите фамилию"></p>
+                    <p>Телефон<br><input type="tel" name="phoneNumber" placeholder="Введите номер телефона"></p>
+                    <p>Электронная почта<br><input type="mail" name="e-mail" placeholder="Введите почту"></p>
+                <h2>Опрос</h2>
+                    <p>Играли ли вы в "Tales of Symphonia?"</p>
+                    <p><input type="radio" name="havePlayed" value="Yes">Да &nbsp;<input type="radio" name="havePlayed" value="No">Нет</p>
+                    <p>Какие персонажи вам понравились больше всего?</p>
+                    <table class="charAsk">
+                        <tr>
+                            <td><img src="../img/lloyd.gif"></td>
+                            <td><input type="checkbox" name="char" value="Lloyd">Ллойд</td>
+                            <td><img src="../img/colette.gif"></td>
+                            <td><input type="checkbox" name="char" value="Colette">Колетт</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/genis.gif"></td>
+                            <td><input type="checkbox" name="char" value="Genis">Дженис</td>
+                            <td><img src="../img/rayne.gif"></td>
+                            <td><input type="checkbox" name="char" value="Rayne">Рейн</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/sheena.gif"></td>
+                            <td><input type="checkbox" name="char" value="Sheena">Шиина</td>
+                            <td><img src="../img/zelos.gif"></td>
+                            <td><input type="checkbox" name="char" value="Zelos">Зелос</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/regal.gif"></td>
+                            <td><input type="checkbox" name="char" value="Regal">Ригал</td>
+                            <td><img src="../img/presea.gif"></td>
+                            <td><input type="checkbox" name="char" value="Presea">Пресея</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><img src="../img/kratos.gif"></td>
+                            <td colspan="2"><input type="checkbox" name="char" value="Kratos">Кратос</td>
+                        </tr>
+                    </table>
+                    <p>Хотите создать команду из понравившихся персонажей?</p>
+                    <input name="condition" class="hide" value="Рандомизированный список понравившихся персонажей">
+                    <input type="button" onclick="randomiseTeam()" value="Да, хочу!"></input>
+                    <p>Получившаяся команда:</p>
+                    <table class="overflow">
+                        <tr>
+                            <td><img class="team" src=""></img></td>
+                            <td><img class="team" src=""></img></td>
+                            <td><img class="team" src=""></img></td>
+                            <td><img class="team" src=""></img></td>
+                        </tr>
+                    </table>
+                    <input name="result" class="hide" id="team">
+                    <button submit>Отправить данные</button>
+            </div>
+        </form>
+        
+        <div class="info" id="meme">
+            <p><a href="#up">Наверх</a></p>
+        </div>
+    </main>
+    <footer>
+        <div class="footerInfo">
+            <p>Все права на игру принадлежат Bandai Namco Entertainment Inc.</p>
+        </div>
+    </footer>
+    <script src="../js/randomiseTeam.js"></script>
+</body>
+</html>

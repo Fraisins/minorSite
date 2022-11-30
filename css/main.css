@@ -1,0 +1,213 @@
+body{
+    min-width: 500px;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.menu{
+    max-height: 600px;
+    background-color: #272932;
+    padding: 20px;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1050px;
+    justify-content: space-around;
+    padding-left: 0;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu li{
+    margin: 5px 7px;
+    text-align: center;
+}
+
+.menu a:not(.active):hover{
+    color: #d2d6dd;
+}
+
+.menu img{
+    width: 25px;
+}
+
+.active{
+    text-shadow: white 1px 0 5px;
+}
+
+.info{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    margin: 30px auto;
+    font-size: 16px;
+}
+
+.fullbg{
+    width: 100%;
+}
+
+h1{
+    font-size: 30px;
+}
+
+li{
+    padding: 3px;
+}
+
+main a{
+    text-decoration: none;
+    color: #a32d4a;
+}
+
+main a:hover{
+    text-decoration: none;
+    color: #4b121a;
+    text-shadow: #ca838d 1px 0 1px;
+}
+
+ol, ul{
+    width: 40%;
+    min-width: 30%;
+}
+
+.video{
+    position: relative;
+}
+
+.video .youtubeButton{
+    display: flex;
+    width: 7%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+table{
+    background:url(../img/animeBg.png);
+    background-repeat:no-repeat;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table.overflow{
+    min-width: 50%;
+    max-width: 490px;
+}
+
+table.overflow td{
+    padding: 5px
+}
+
+td img{
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th{
+    padding-top: 10px;
+    font-size: 18px;
+    background-color: #8cc59577;
+}
+
+tr{
+    border: #d2d6dd solid;
+}
+
+td{
+    padding: 10px;
+    background-color: #f2f5eb9f;
+}
+
+table ul, table ol{
+    margin: 20px;
+    padding: 0;
+}
+
+table li{
+    text-align: left;
+    padding: 0;
+    min-width: 100px;
+    max-width: 300px
+}
+
+.tableFlex{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tableFlex table{
+    width: 49%;
+    min-width: 430px;
+}
+
+table figcaption{
+    margin: 10px 0 0 0;
+}
+
+#elements img{
+    width: 32px;
+}
+
+.charAsk{
+    width: 40%;
+    min-width: 300px;
+}
+
+.hide{
+    display: none;
+}
+
+#meme img{
+    width: 100px;
+}
+
+footer{
+    background-color: #272932;
+    color: white;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+.footerInfo{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .menu ul {
+      width: 430px;
+      font-size: 20px;
+    }
+    .menu{
+        padding: 10px;
+    }
+    h1{
+        font-size: 1.3em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    p, li{
+        font-size: 0.8em;
+    }
+  }
